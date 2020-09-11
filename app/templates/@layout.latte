@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
 
-    <title>{ifset title}{include title|stripHtml} | {/ifset}{* project name *}</title>
+    <title>{ifset title}{include title|stripHtml} | {/ifset}Skeleton</title>
 
     {block head}
         <link rel="stylesheet" href="{$basePath}/ven/bootstrap/4.5.2/dist/css/bootstrap.css">
@@ -13,6 +13,8 @@
 </head>
 
 <body>
+
+{include '@navbar.latte'}
 
 <div n:foreach="$flashes as $flash" n:class="flash, $flash->type, alert, 'alert-'.$flash->type">{$flash->message}</div>
 

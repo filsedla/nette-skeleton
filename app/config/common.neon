@@ -4,7 +4,7 @@ parameters:
 application:
     errorPresenter: Error
     mapping:
-        *: App\*\*Presenter # project name namespace
+        *: App\*\*Presenter
 
 
 session:

@@ -1,9 +1,9 @@
 <?php declare(strict_types = 1);
 
-namespace App;
+namespace App\Front;
 
 
-final class HomePresenter extends \App\BasePresenter
+final class HomePresenter extends BasePresenter
 {
 
     public function actionDefault()

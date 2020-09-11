@@ -5,7 +5,7 @@ namespace App;
 use Nette;
 
 
-final class Error4xxPresenter extends BasePresenter
+final class Error4xxPresenter extends \App\BasePresenter
 {
     public function startup(): void
     {

@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{plink :Home:}">Skeleton</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="{plink :Home:}">Home</a>
+            </li>
+
+            <li n:class="nav-item, dropdown, $presenter->isModuleCurrent(':Front') ? active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                    Front
+                </a>
+                <div class="dropdown-menu">
+                    <a class="nav-link" href="{plink :Front:Home:}">Front/Home</a>
+                    {*<div class="dropdown-divider"></div>*}
+                </div>
+            </li>
+
+            {*<li class="nav-item">*}
+                {*<a class="nav-link" href="{plink :Api:Home:}">API</a>*}
+            {*</li>*}
+
+        </ul>
+    </div>
+</nav>
+
