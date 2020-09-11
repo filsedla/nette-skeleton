@@ -6,10 +6,10 @@ parameters:
             user: ***
             password: ***
 
-#application:
+application:
 #    catchExceptions: yes
 
-#tracy:
+tracy:
 #    maxLength: 1000
 #    maxDepth: 5
 #    showBar: no
