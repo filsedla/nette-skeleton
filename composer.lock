@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7d9c977aac60ae117af7d7d647033eb",
+    "content-hash": "6ac7e513d95d6af5d2ab992dfb6e4d36",
     "packages": [
         {
             "name": "latte/latte",
@@ -1491,7 +1491,49 @@
             "time": "2020-05-17T09:50:45+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "filsedla/dbtool",
+            "version": "v0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filsedla/dbtool.git",
+                "reference": "31661e19e802774d17ce93cc8e76362eba16c4cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filsedla/dbtool/zipball/31661e19e802774d17ce93cc8e76362eba16c4cf",
+                "reference": "31661e19e802774d17ce93cc8e76362eba16c4cf",
+                "shasum": ""
+            },
+            "require": {
+                "nette/database": "^2.3 || ^3.0",
+                "nette/utils": "^2.3 || ^3.0",
+                "php": ">= 5.4.0"
+            },
+            "require-dev": {
+                "tracy/tracy": "^2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Filip Sedlacek",
+                    "email": "filsedla@gmail.com"
+                }
+            ],
+            "description": "A MySQL database structure dumping tool",
+            "time": "2019-12-09T13:14:46+00:00"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],

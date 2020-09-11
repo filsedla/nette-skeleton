@@ -4,7 +4,9 @@
     "php": ">= 7.1",
     "nette/nette": "~3.0.0"
   },
-  "require-dev": {},
+  "require-dev": {
+    "filsedla/dbtool": "0.4"
+  },
   "minimum-stability": "stable",
   "config": {
     "platform": {
