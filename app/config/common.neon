@@ -20,7 +20,7 @@ di:
 
 
 services:
-    router: App\Router\RouterFactory::createRouter
+    router: App\RouterFactory::createRouter
 
     - App\ParametersService
 
