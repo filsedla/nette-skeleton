@@ -9,7 +9,7 @@ application:
 
 session:
     expiration: 14 days
-
+    debugger: %debugMode%
 
 di:
     export:
@@ -19,3 +19,6 @@ di:
 
 services:
     router: App\Router\RouterFactory::createRouter
+
+includes:
+    - parameters.neon
