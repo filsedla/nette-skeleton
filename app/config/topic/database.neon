@@ -1,0 +1,20 @@
+parameters:
+    database:
+        default:
+            explain: false
+
+database:
+    default:
+        dsn: 'mysql:host=%database.default.host%;dbname=%database.default.dbname%;charset=utf8mb4'
+        user: %database.default.user%
+        password: %database.default.password%
+        explain: %database.default.explain%
+        conventions: discovered
+        options:
+            lazy: yes
+            sqlmode: 'ERROR_FOR_DIVISION_BY_ZERO,NO_ZERO_DATE,NO_ZERO_IN_DATE,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION,STRICT_ALL_TABLES' # ONLY_FULL_GROUP_BY
+            charset: false
+
+services:
+
+

@@ -1,7 +1,15 @@
 parameters:
+    database:
+        default:
+            host: localhost
+            dbname: ***
+            user: ***
+            password: ***
 
+#application:
+#    catchExceptions: yes
 
-database:
-    dsn: 'mysql:host=127.0.0.1;dbname=test'
-    user:
-    password:
+#tracy:
+#    maxLength: 1000
+#    maxDepth: 5
+#    showBar: no

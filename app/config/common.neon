@@ -12,13 +12,19 @@ session:
     debugger: %debugMode%
 
 di:
+    parentClass: App\DI\Container
     export:
-        parameters: no
+#        parameters: no
         tags: no
+        #types: []
 
 
 services:
     router: App\Router\RouterFactory::createRouter
 
+    - App\ParametersService
+
 includes:
     - parameters.neon
+    - topic/database.neon
+    - topic/hyperrow.neon

@@ -4,8 +4,52 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6ac7e513d95d6af5d2ab992dfb6e4d36",
+    "content-hash": "4484ba3d5727896c24b5b3a1306a10d4",
     "packages": [
+        {
+            "name": "filsedla/hyperrow",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filsedla/hyperrow.git",
+                "reference": "d2840be309f24d88cce03337c18d7437f7097f62"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filsedla/hyperrow/zipball/d2840be309f24d88cce03337c18d7437f7097f62",
+                "reference": "d2840be309f24d88cce03337c18d7437f7097f62",
+                "shasum": ""
+            },
+            "require": {
+                "nette/database": "^2.3 || ^3.0",
+                "nette/di": "^2.3 || ^3.0",
+                "nette/utils": "^2.3 || ^3.0",
+                "php": ">= 5.4.0"
+            },
+            "require-dev": {
+                "nette/bootstrap": "^2.3",
+                "nette/robot-loader": "^2.3",
+                "tracy/tracy": "^2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Filip Sedlacek",
+                    "email": "filsedla@gmail.com"
+                }
+            ],
+            "description": "A wrapping layer with both custom and automatically generated classes for Nette Database",
+            "time": "2019-12-27T13:37:00+00:00"
+        },
         {
             "name": "latte/latte",
             "version": "v2.8.1",
@@ -1536,7 +1580,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "filsedla/hyperrow": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

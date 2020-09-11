@@ -2,7 +2,8 @@
   "type": "project",
   "require": {
     "php": ">= 7.1",
-    "nette/nette": "~3.0.0"
+    "nette/nette": "~3.0.0",
+    "filsedla/hyperrow": "dev-master"
   },
   "require-dev": {
     "filsedla/dbtool": "0.4"

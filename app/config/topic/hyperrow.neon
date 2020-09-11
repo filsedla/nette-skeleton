@@ -1,0 +1,59 @@
+parameters:
+    hyperrow:
+        base:
+            methods:
+                database:
+                    table:
+                        - table*
+                        - get*
+                selection:
+                    where:
+                        - with*
+                    whereRelated:
+                        - with*
+                    whereRelatedWith:
+                        - with*
+                        - *
+                row:
+                    ref:
+                        - get*
+                    related:
+                        - getRelated*
+                    getter:
+                        - get*
+        default:
+            dir: %appDir%/classes/Database/generated
+            classes:
+                database:
+                    generated: App\GeneratedDatabase
+                selection:
+                    base: App\BaseSelection
+                    generated: App\*GeneratedSelection
+                    mapping: App\*Selection
+                row:
+                    base: App\BaseRow
+                    generated: App\*GeneratedRow
+                    mapping: App\*Row
+            methods: %hyperrow.base.methods%
+            nestedTransactions: yes
+            tables: NULL
+            noRowReturnValue: null
+
+services:
+    hyperrow.default.factory:
+        class: Filsedla\Hyperrow\Factory
+        arguments: [%hyperrow.default.classes.selection.mapping%, %hyperrow.default.classes.row.mapping%, ...]
+        autowired: no
+
+    hyperrow.default.generator:
+        class: Filsedla\Hyperrow\Generator
+        arguments: [%hyperrow.default%, @database.default.structure]
+        autowired: no
+
+    hyperrow.default.config:
+        class: Filsedla\Hyperrow\Config
+        arguments: [%hyperrow.default%]
+        autowired: no
+
+    - App\Database(@database.default.context, @hyperrow.default.factory, @hyperrow.default.config)
+
