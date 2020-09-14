@@ -28,3 +28,5 @@ includes:
     - parameters.neon
     - topic/database.neon
     - topic/hyperrow.neon
+    - topic/latte.neon
+

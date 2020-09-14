@@ -1,0 +1,9 @@
+parameters:
+
+latte:
+
+services:
+
+    latte.latteFactory:
+        setup:
+            - addFilter(NULL, App\Latte\Filters::common)
